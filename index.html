@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation with Forms</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12 border border-primary">
+          <form method="POST" id="form">
+            <h2>Personal Details:</h2>
+            <div class="form-group mt-3">
+              <label for="#FirstName"><b>First Name</b></label> <br />
+              <input
+                type="text"
+                id="FirstName"
+                class="form-control"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="#LastName "><b>Last Name</b></label> <br />
+              <input
+                type="text"
+                id="LastName"
+                class="form-control"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+
+            <div class="form-group mt-3">
+              <label for="#Address"><b>Address</b></label> <br />
+              <input
+                type="text"
+                id="Address"
+                class="form-control"
+                placeholder="Address"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="#Pincode"><b>Pincode</b></label> <br />
+              <input
+                type="text"
+                id="Pincode"
+                maxlength="6"
+                pattern="\d*"
+                class="form-control"
+                required
+                placeholder="Enter only numbers"
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="#Gender"><b>Gender</b></label> <br />
+              <select class="form-control" name="Gender" id="Gender" required>
+                <option disabled selected value=""></option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group mt-3">
+              <label for="#Food"><b>Select at least 2 Items</b></label> <br />
+              <input
+                type="checkbox"
+                id="Burger"
+                value="Burger"
+                class="Checkbox"
+              />
+              <label for="#Burger" class="border-end pe-2 border-secondary"
+                >Burger</label
+              >
+              <input
+                type="checkbox"
+                id="Dhokla"
+                value="Dhokla"
+                class="Checkbox"
+              />
+              <label for="#Paneer" class="border-end pe-2 border-secondary"
+                >Dhokla</label
+              >
+              <input
+                type="checkbox"
+                id="Burger"
+                value="Burger"
+                class="Checkbox"
+              />
+              <label for="#Briyani" class="border-end pe-2 border-secondary"
+                >Briyani</label
+              >
+              <input
+                type="checkbox"
+                id="Samosa"
+                value="Samosa"
+                class="Checkbox"
+              />
+              <label for="#Samosa" class="border-end pe-2 border-secondary"
+                >Samosa</label
+              >
+              <input
+                type="checkbox"
+                id="Masala dosa"
+                value="Masala dosa"
+                class="Checkbox"
+              />
+              <label for="#Masala dosa" class="border-end">Masala dosa</label>
+            </div>
+            <div class="form-group mt-3">
+              <label for="#State"><b>State</b></label> <br />
+              <input
+                type="text"
+                id="State"
+                class="form-control"
+                placeholder="State"
+                required
+              />
+            </div>
+            <div class="form-group mt-3">
+              <label for="#Country"><b>Country</b></label> <br />
+              <input
+                type="text"
+                id="Country"
+                class="form-control"
+                placeholder="Country"
+                required
+              />
+            </div>
+            <div>
+              <button class="btn btn-primary mt-3" id="submit" type="submit">
+                Submit
+              </button>
+              <button class="btn btn-warning mt-3" id="reset" type="button">
+                Reset
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-8 col-md-6" id="main_div">
+          <table class="table table-hover border border-primary" id="table">
+            <thead>
+              <tr class="table-dark">
+                <th>FirstName</th>
+                <th>LastName</th>
+                <th>Address</th>
+                <th>Pincode</th>
+                <th>Gender</th>
+                <th>Choice of Food</th>
+                <th>State</th>
+                <th>Country</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
