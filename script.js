@@ -1,28 +1,29 @@
-const cat_btn = document.getElementById("cat_btn");
-const dog_btn = document.getElementById("dog_btn");
-const cat_result = document.getElementById("cat_result");
-const dog_result = document.getElementById("dog_result");
-
-cat_btn.addEventListener("click", getRandomCat);
-
-dog_btn.addEventListener("click", getRandomDog);
-
-function getRandomCat() {
-  fetch("https://aws.random.cat/meow")
-    .then((res) => res.json())
-    .then((data) => {
-      cat_result.innerHTML = `<img src=${data.file}  width="300px" height="300px" alt="cat"/>`;
-    });
+function add() {
+  var a = document.getElementById("first").value;
+  var b = document.getElementById("second").value;
+  var out = Number(a) + Number(b);
+  document.getElementsByClassName("output")[0].innerText = "Addition is " + out;
 }
 
-function getRandomDog() {
-  fetch("https://random.dog/woof.json")
-    .then((res) => res.json())
-    .then((data) => {
-      if (data.url.includes(".mp4")) {
-        getRandomDog();
-      } else {
-        dog_result.innerHTML = `<img src=${data.url} width="300px" height="300px" alt="dog"/>`;
-      }
-    });
+function sub() {
+  var a = document.getElementById("first").value;
+  var b = document.getElementById("second").value;
+  var out = Number(a) - Number(b);
+  document.getElementsByClassName("output")[0].innerText =
+    "Subtraction is " + out;
+}
+
+function mul() {
+  var a = document.getElementById("first").value;
+  var b = document.getElementById("second").value;
+  var out = Number(a) * Number(b);
+  document.getElementsByClassName("output")[0].innerText =
+    "Multiplication is " + out;
+}
+
+function div() {
+  var a = document.getElementById("first").value;
+  var b = document.getElementById("second").value;
+  var out = Number(a) / Number(b);
+  document.getElementsByClassName("output")[0].innerText = "Division is " + out;
 }
