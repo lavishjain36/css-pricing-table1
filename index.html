@@ -1,37 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <script src="script.js"></script>
-
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout of the Website</title>
+    <!-- Font Awesome -->
     <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
     />
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="panel panel-primary">
-        <div class="panel-heading">Calculator</div>
-        <div>
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <label>First Value</label>
-              <input id="first" class="form-control" />
-            </div>
-            <div class="col-md-6 form-group">
-              <label>Second Value</label>
-              <input id="second" class="form-control" />
-            </div>
-          </div>
-          <button onclick="add()" class="btn btn-success">Add</button>
-          <button onclick="sub()" class="btn btn-success">Sub</button>
-          <button onclick="mul()" class="btn btn-success">Mul</button>
-          <button onclick="div()" class="btn btn-success">Div</button>
+    <main class="layout-container">
+      <header class="flex-header">Flex Header</header>
+      <main class="flex-main-container">
+        <nav class="flex-nav">
+          <div>Home <i class="fas fa-home"></i></div>
 
-          <p class="output"></p>
-        </div>
-      </div>
-    </div>
+          <div>About us</div>
+          <div>Technology</div>
+          <div>Technology</div>
+        </nav>
+        <article class="flex-article-section">Main Body or COntent</article>
+        <aside class="flex-aside">Side Ad Bar</aside>
+      </main>
+      <footer class="flex-footer">Footer</footer>
+    </main>
   </body>
 </html>
