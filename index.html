@@ -6,39 +6,43 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav>
-      <a href="#">JS DOM Manipulation ONE</a>
-    </nav>
-
-    <!-- Dynamic Tables -->
+    <!-- Change Event for Select Box -->
     <section>
-      <button id="all-emp-btn">All Employees</button>
-      <button id="male-emp-btn">Male Employees</button>
-      <button id="female-emp-btn">Female Employees</button>
-
       <form>
-        <input
-          type="search"
-          placeholder="Search Here"
-          class="inputField"
-          id="search-box"
-        />
+        <select id="select-tag">
+          <option value="">Select a Technology</option>
+          <option value="HTML">HTML</option>
+          <option value="CSS">CSS</option>
+          <option value="JavaScript">JavaScript</option>
+          <option value="JQuery">JQuery</option>
+          <option value="Bootstrap">Bootstrap</option>
+        </select>
+        <span id="span-1"></span>
       </form>
+    </section>
 
-      <!-- Employee Table -->
-      <table>
-        <thead>
-          <tr>
-            <th>SNO</th>
-            <th>FIRST NAME</th>
-            <th>LAST NAME</th>
-            <th>EMAIL</th>
-            <th>GENDER</th>
-            <th>IP ADDRESS</th>
-          </tr>
-        </thead>
-        <tbody id="table-body"></tbody>
-      </table>
+    <!-- Key up event -->
+    <section>
+      <form>
+        <input type="text" placeholder="Your Name" id="username" />
+        <h3 id="user-text"></h3>
+      </form>
+    </section>
+
+    <!-- SMS App -->
+    <section>
+      <form>
+        <textarea id="text-area" rows="5" cols="50" maxlength="100"></textarea>
+        <h3>The Characters Remaining <span id="span-2">100</span></h3>
+      </form>
+    </section>
+
+    <!-- Change Password Box -->
+    <section>
+      <form>
+        <input type="password" id="password" />
+        <input type="checkbox" id="check" /> Show Password
+      </form>
     </section>
 
     <script src="script.js"></script>

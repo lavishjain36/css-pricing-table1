@@ -1,41 +1,36 @@
 section {
-  padding: 15px;
+  background-color: whitesmoke;
   text-align: center;
+  padding: 15px;
+  margin: 15px;
 }
-button {
-  font-size: 20px;
-  padding: 14px 25px;
-  background-color: blueviolet;
-  color: whitesmoke;
-}
-table,
-th,
-td {
-  border: 2px solid orangered;
-  border-collapse: collapse;
-  padding: 10px;
-}
-table {
-  width: 100%;
-  margin-top: 10px;
-  box-shadow: 0 0 5px black;
-}
-table thead {
-  background-color: rgb(17, 0, 255);
-  color: white;
-}
-table tbody {
-  background-color: rgb(80, 170, 255);
+select {
   font-size: 20px;
 }
-.inputField {
+#span-1 {
+  color: red;
+  font-weight: bold;
+  font-size: 20px;
+}
+#username {
+  font-size: 25px;
+  height: 35px;
+}
+#user-text {
   font-size: 30px;
-  margin: 20px;
-  height: 50px;
-  border: 2px solid gray;
-  outline: none;
-  border-radius: 5px;
+  margin: 0;
 }
-.inputField:focus {
-  border: 2px solid orangered;
+textarea {
+  font-size: 20px;
+}
+#span-2 {
+  font-size: 40px;
+  color: red;
+}
+#password {
+  font-size: 30px;
+}
+#check {
+  width: 30px;
+  height: 30px;
 }
