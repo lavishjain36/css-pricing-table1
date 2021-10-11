@@ -2,49 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>DOM Manipulation</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Data</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Change Event for Select Box -->
+    <!-- /button -->
     <section>
-      <form>
-        <select id="select-tag">
-          <option value="">Select a Technology</option>
-          <option value="HTML">HTML</option>
-          <option value="CSS">CSS</option>
-          <option value="JavaScript">JavaScript</option>
-          <option value="JQuery">JQuery</option>
-          <option value="Bootstrap">Bootstrap</option>
-        </select>
-        <span id="span-1"></span>
+      <button id="all-emp-btn">All Employee</button>
+      <button id="male-emp-btn">Male Employee</button>
+      <button id="female-emp-btn">Female Employee</button>
+      <br /><br />
+      <!-- Search input -->
+      <form action="">
+        <input
+          type="search"
+          placeholder="Search Here"
+          class="inputField"
+          id="search-box"
+        />
       </form>
+      <br /><br />
+      <!-- Employee table -->
+      <table>
+        <thead>
+          <tr>
+            <th>SNO</th>
+            <th>FIRST NAME</th>
+            <th>LAST NAME</th>
+            <th>EMAIL</th>
+            <th>GENDER</th>
+            <th>IP ADDRESS</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
     </section>
-
-    <!-- Key up event -->
-    <section>
-      <form>
-        <input type="text" placeholder="Your Name" id="username" />
-        <h3 id="user-text"></h3>
-      </form>
-    </section>
-
-    <!-- SMS App -->
-    <section>
-      <form>
-        <textarea id="text-area" rows="5" cols="50" maxlength="100"></textarea>
-        <h3>The Characters Remaining <span id="span-2">100</span></h3>
-      </form>
-    </section>
-
-    <!-- Change Password Box -->
-    <section>
-      <form>
-        <input type="password" id="password" />
-        <input type="checkbox" id="check" /> Show Password
-      </form>
-    </section>
-
-    <script src="script.js"></script>
   </body>
+  <script src="script.js"></script>
 </html>

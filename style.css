@@ -1,36 +1,51 @@
 section {
-  background-color: whitesmoke;
-  text-align: center;
   padding: 15px;
-  margin: 15px;
+  text-align: center;
 }
-select {
+
+button {
   font-size: 20px;
+  padding: 14px 25px;
+  background-color: rgb(0, 89, 255);
+  color: rgb(248, 248, 248);
 }
-#span-1 {
-  color: red;
-  font-weight: bold;
-  font-size: 20px;
+
+button:hover {
+  cursor: pointer;
+  background-color: greenyellow;
+  color: black;
 }
-#username {
-  font-size: 25px;
-  height: 35px;
+
+table,
+th,
+td {
+  border: 2px solid rgb(70, 61, 61);
+  border-collapse: collapse;
+  padding: 10px;
 }
-#user-text {
+
+table {
+  width: 100%;
+  margin-top: 10px;
+  box-shadow: 0 0 10px black;
+}
+
+table thead {
+  background-color: rgb(50, 176, 218);
+}
+
+table tbody {
+  background-color: rgb(255, 161, 255);
+}
+.inputField {
   font-size: 30px;
-  margin: 0;
+  margin: 20px;
+  height: 50px;
+  border: 2px solid green;
+  outline: none;
+  border-radius: 8px;
 }
-textarea {
-  font-size: 20px;
-}
-#span-2 {
-  font-size: 40px;
-  color: red;
-}
-#password {
-  font-size: 30px;
-}
-#check {
-  width: 30px;
-  height: 30px;
+
+.inputField:hover {
+  background-color: red;
 }
