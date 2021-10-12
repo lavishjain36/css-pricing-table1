@@ -1,51 +1,54 @@
-section {
-  padding: 15px;
+* {
+  box-sizing: border-box;
+}
+
+/* Divide 3 col into equal width  */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 2px solid black;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 15px 0 rgb(255, 0, 119);
+}
+
+.price .header {
+  background-color: rgb(0, 89, 255);
+  color: whitesmoke;
+  font-size: 28px;
+}
+
+.price li {
+  border-bottom: 4px solid rgb(171, 196, 228);
+  padding: 20px;
   text-align: center;
 }
 
-button {
+.price .grey {
+  background-color: lightgray;
   font-size: 20px;
-  padding: 14px 25px;
-  background-color: rgb(0, 89, 255);
-  color: rgb(248, 248, 248);
+  font-weight: 500;
 }
 
-button:hover {
-  cursor: pointer;
-  background-color: greenyellow;
-  color: black;
+.button {
+  border: none;
+  color: rgb(10, 38, 131);
+  text-decoration: none;
+  font-weight: bold;
 }
 
-table,
-th,
-td {
-  border: 2px solid rgb(70, 61, 61);
-  border-collapse: collapse;
-  padding: 10px;
-}
-
-table {
-  width: 100%;
-  margin-top: 10px;
-  box-shadow: 0 0 10px black;
-}
-
-table thead {
-  background-color: rgb(50, 176, 218);
-}
-
-table tbody {
-  background-color: ;
-}
-.inputField {
-  font-size: 30px;
-  margin: 20px;
-  height: 50px;
-  border: 2px solid green;
-  outline: none;
-  border-radius: 8px;
-}
-
-.inputField:hover {
-  background-color: red;
+@media only screen and (max-width: 580px) {
+  .columns {
+    width: 100%;
+  }
 }
